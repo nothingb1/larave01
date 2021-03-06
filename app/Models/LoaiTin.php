@@ -16,4 +16,10 @@ class LoaiTin extends Model
         'status',
         'theloai_id'
     ];
+    public function theLoais(){
+        return $this->belongsTo(TheLoai::class);
+    }
+    public function tins(){
+        return $this->hasMany(Tin::class, 'loaitin_id');
+    }
 }
