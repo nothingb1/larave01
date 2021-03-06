@@ -15,4 +15,7 @@ class TheLoai extends Model
         'order',
         'status'
     ];
+    public function loaiTins(){
+        return $this->hasMany(LoaiTin::class, 'theloai_id');
+    }
 }

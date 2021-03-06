@@ -16,5 +16,8 @@ class Comment extends Model
         'tin_id'
 
     ];
+    public function tin(){
+        return $this->belongsTo(Tin::class, 'tin_id');
+    }
 
 }

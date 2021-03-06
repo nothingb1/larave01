@@ -19,4 +19,10 @@ class Tin extends Model
         'theloai_id',
         'loaitin_id'
     ];
+    public function Comment(){
+        return $this->hasMany(Comment::class, 'tin_id');
+    }
+    public function loaiTins(){
+        return $this->belongsTo(LoaiTin::class);
+    }
 }
