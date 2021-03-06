@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('user/{id}', function ($id) {
+    return 'user ' .$id;
+});
+
+Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId){
+    return 'post ' .$postId.'<br>'.' comment: '.$commentId;  
+});
+Route::get('user/{name?}', function ($name= 'hahaha') {
+    return $name;
+});
+Route::prefix('admin')->group(function(){
+    Route::get('user/{id}', function ($id){
+    return 'user ' .$id;
+    });
+});
