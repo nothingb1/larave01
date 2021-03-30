@@ -2,15 +2,15 @@
 
 <?php $n = 1; ?>
 @section('content')
-<h1>Index theloai</h1>
+<h1>{{ @trans('tpl.theloai.index.title') }}</h1>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Slug</th>
-      <th scope="col">Order</th>
-      <th scope="col">Status</th>
+      <th scope="col">{{ @trans('tpl.theloai.index.name') }}</th>
+      <th scope="col">{{ @trans('tpl.theloai.index.slug') }}</th>
+      <th scope="col">{{ @trans('tpl.theloai.index.order') }}</th>
+      <th scope="col">{{ @trans('tpl.theloai.index.status') }}</th>
       <th scope="col">#</th>
       <th scope="col">#</th>
     </tr>
