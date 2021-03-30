@@ -23,12 +23,12 @@
       <td>{{ $theloai->slug }}</td>
       <td>{{ $theloai->order }}</td>
       <td>{{ $theloai->status }}</td>
-      <td><a href="{{ route('theloais.edit',['id' => $theloai->id]) }}">Edit</a></td>
+      <td><a href="{{ route('theloais.edit',['id' => $theloai->id]) }}">{{ @trans('tpl.theloai.index.edit') }}</a></td>
       <td>
       <form action="{{ route('theloais.destroy', ['id' => $theloai->id ])}}" method="POST">
         {{method_field('DELETE')}}
         {{csrf_field()}}
-        <input type="submit" class="btn btn-danger" value="Delete"/>
+        <input type="submit" class="btn btn-danger" value="{{ @trans('tpl.theloai.index.delete') }}"/>
       </form>
       </td>
       

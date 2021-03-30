@@ -18,5 +18,6 @@ return [
     'theloai.index.slug' => 'slug',
     'theloai.index.order' => 'Thứ tự',
     'theloai.index.status' => 'Trạng thái',
-
+    'theloai.index.edit' => 'Sửa',
+    'theloai.index.delete' => 'Xóa',
 ];

@@ -18,5 +18,7 @@ return [
     'theloai.index.slug' => 'Slug',
     'theloai.index.order' => 'Order',
     'theloai.index.status' => 'Status',
+    'theloai.index.edit' => 'Edit',
+    'theloai.index.delete' => 'Delete',
 
 ];
